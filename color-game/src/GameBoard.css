@@ -1,0 +1,6 @@
+.game-board {
+  border: solid purple 2px;
+  height: 95vh;
+  display: flex;
+  padding: 20px;
+}

@@ -1,0 +1,30 @@
+.CountryGame {
+  text-align: center;
+}
+
+input[type='submit'] {
+  border: 0;
+  border-radius: 4px;
+  height: 40px;
+  background: purple;
+  color: white;
+  width: 100px;
+  outline: none;
+}
+
+fieldset{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.flag {
+  padding: 20px;
+  width: 40%;
+}

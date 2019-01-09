@@ -1,0 +1,17 @@
+ul {
+  list-style-type: none;
+}
+
+.nav-bar {
+  border: 4px purple solid;
+  background-color: DodgerBlue;
+  color: white;
+  font-weight: bold;
+  height: 6vh;
+}
+
+.nav-bar-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+}

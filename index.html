@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Component 1</title>
+    <link rel="stylesheet" href="first-component.css">
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+
+      class PartyList extends React.Component {
+        render() {
+	  const parties = ['David Guetta', 'Carl Cox', 'Kygo', 'Martin Garrix'];
+          const liStyle = {fontSize: '1.1em'};
+	  return (
+	    <ul>
+	      {parties.sort().map((h, i) => <li key={i} style={liStyle}>{h}</li>)}
+	    </ul>
+	  );
+        }
+      }
+
+      class Holiday extends React.Component {
+	render() {
+          return (<div className="card">
+	    <h2 className="name">Holiday</h2>
+	    <img src="https://i2-prod.mirror.co.uk/incoming/article8154338.ece/ALTERNATES/s615/Ocean-Beach-Ibiza-Spray-Opening-Party.jpg"	alt="Ibiza pic" />
+	    <h5 style={{fontSize: '1.5em', margin: '1px'}}>Parties:</h5>
+            <PartyList/>
+          </div>)
+	}
+      };
+      ReactDOM.render(<Holiday/>, document.getElementById('app'));
+    </script>
+  </body>
+</html>
